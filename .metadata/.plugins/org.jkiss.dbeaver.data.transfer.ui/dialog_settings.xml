@@ -10,7 +10,7 @@
 			<item key="mappings" value="[]"/>
 		</section>
 		<section name="DatabaseTransferConsumer">
-			<item key="entityId" value="sqlite_jdbc-190a808ca80-23e4f39e7887ad37"/>
+			<item key="entityId" value="sqlite_jdbc-190a8932abc-27cbefdd04fa79c7"/>
 			<item key="openNewConnections" value="true"/>
 			<item key="useTransactions" value="true"/>
 			<item key="commitAfterRows" value="10000"/>
@@ -32,26 +32,32 @@
 					<section name="attributes">
 						<section name="ID">
 							<item key="targetName" value="ID"/>
+							<item key="targetType" value=""/>
 							<item key="mappingType" value="create"/>
 						</section>
 						<section name="Data do Pedido">
 							<item key="targetName" value="&quot;Data do Pedido&quot;"/>
+							<item key="targetType" value=""/>
 							<item key="mappingType" value="create"/>
 						</section>
 						<section name="Status">
 							<item key="targetName" value="Status"/>
+							<item key="targetType" value=""/>
 							<item key="mappingType" value="create"/>
 						</section>
 						<section name="Total do Pedido">
 							<item key="targetName" value="&quot;Total do Pedido&quot;"/>
+							<item key="targetType" value=""/>
 							<item key="mappingType" value="create"/>
 						</section>
 						<section name="Cliente">
 							<item key="targetName" value="Cliente"/>
+							<item key="targetType" value=""/>
 							<item key="mappingType" value="create"/>
 						</section>
 						<section name="Data de Envio Estimada">
 							<item key="targetName" value="&quot;Data de Envio Estimada&quot;"/>
+							<item key="targetType" value=""/>
 							<item key="mappingType" value="create"/>
 						</section>
 					</section>
@@ -62,22 +68,27 @@
 					<section name="attributes">
 						<section name="ID">
 							<item key="targetName" value="ID"/>
+							<item key="targetType" value=""/>
 							<item key="mappingType" value="create"/>
 						</section>
 						<section name="Nome do Fornecedor">
 							<item key="targetName" value="&quot;Nome do Fornecedor&quot;"/>
+							<item key="targetType" value=""/>
 							<item key="mappingType" value="create"/>
 						</section>
 						<section name="País de Origem">
 							<item key="targetName" value="&quot;País de Origem&quot;"/>
+							<item key="targetType" value=""/>
 							<item key="mappingType" value="create"/>
 						</section>
 						<section name="Informações de Contato">
 							<item key="targetName" value="&quot;Informações de Contato&quot;"/>
+							<item key="targetType" value=""/>
 							<item key="mappingType" value="create"/>
 						</section>
 						<section name="Data de Início">
 							<item key="targetName" value="&quot;Data de Início&quot;"/>
+							<item key="targetType" value=""/>
 							<item key="mappingType" value="create"/>
 						</section>
 					</section>
