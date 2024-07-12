@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item id="NodeList/DBNProjectDatabases/DBNBookmarkFolder/DBNDashboardFolder/DBNDiagramFolder/DBNResource">
+		<column name="Nome" visible="true" order="0" width="107"/>
+		<column name="Caminho" visible="true" order="1" width="198"/>
+		<column name="Tamanho" visible="true" order="2" width="100"/>
+		<column name="Última modificação" visible="true" order="3" width="145"/>
+	</item>
+	<item id="NodeList/DBNProjectDatabases/DBNResource/DBNBookmarkFolder/DBNDashboardFolder/DBNDiagramFolder">
+		<column name="Nome" visible="true" order="0" width="152"/>
+		<column name="Caminho" visible="true" order="1" width="245"/>
+		<column name="Tamanho" visible="true" order="2" width="100"/>
+		<column name="Última modificação" visible="true" order="3" width="145"/>
+	</item>
+	<item id="NodeList/DBNRoot/DataSourceDescriptor">
+		<column name="Nome" visible="true" order="0" width="100"/>
+		<column name="Descrição" visible="true" order="1" width="100"/>
+		<column name="Origin" visible="true" order="2" width="100"/>
+		<column name="Tipo de driver" visible="true" order="3" width="107"/>
+	</item>
+	<item id="NodeList/DBSDataType/SQLiteDataType">
+		<column name="Nome" visible="true" order="0" width="100"/>
+		<column name="Descrição" visible="true" order="1" width="100"/>
+	</item>
+	<item id="NodeList/DataSourceDescriptor">
+		<column name="Nome" visible="true" order="0" width="100"/>
+		<column name="Descrição" visible="true" order="1" width="100"/>
+		<column name="Origin" visible="true" order="2" width="100"/>
+		<column name="Tipo de driver" visible="true" order="3" width="107"/>
+	</item>
+	<item id="NodeList/GenericTable">
+		<column name="Nome da tabela" visible="true" order="0" width="122"/>
+		<column name="Tipo de tabela" visible="true" order="1" width="111"/>
+		<column name="Descrição da tabela" visible="true" order="2" width="146"/>
+	</item>
+	<item id="NodeList/SQLiteTable">
+		<column name="Nome da tabela" visible="true" order="0" width="122"/>
+		<column name="Tipo de tabela" visible="true" order="1" width="113"/>
+		<column name="Descrição da tabela" visible="true" order="2" width="146"/>
+	</item>
+	<item id="NodeList/SQLiteTableColumn">
+		<column name="Nome da coluna" visible="true" order="0" width="163"/>
+		<column name="#" visible="true" order="1" width="100"/>
+		<column name="Tipo de dados" visible="true" order="2" width="110"/>
+		<column name="Comprimento" visible="true" order="3" width="106"/>
+		<column name="Não nulo" visible="true" order="4" width="100"/>
+		<column name="Auto Incrementar" visible="true" order="5" width="129"/>
+		<column name="Padrão" visible="true" order="6" width="100"/>
+		<column name="Descrição" visible="true" order="7" width="100"/>
+	</item>
+	<item id="Suggestion/NodeList/SQLiteTableColumn">
+		<column name="Nome da coluna" visible="true" order="0" width="248"/>
+		<column name="#" visible="true" order="1" width="95"/>
+		<column name="Tipo de dados" visible="false" order="2" width="110"/>
+		<column name="Comprimento" visible="false" order="3" width="106"/>
+		<column name="Não nulo" visible="false" order="4" width="100"/>
+		<column name="Auto Incrementar" visible="false" order="5" width="129"/>
+		<column name="Padrão" visible="false" order="6" width="100"/>
+		<column name="Descrição" visible="true" order="2" width="141"/>
+	</item>
+	<item id="scriptSelectorViewer">
+		<column name="Script" visible="true" order="0" width="153"/>
+		<column name="Hora" visible="true" order="1" width="203"/>
+		<column name="Informações" visible="true" order="2" width="130"/>
+		<column name="Pasta" visible="true" order="3" width="82"/>
+	</item>
+</items>

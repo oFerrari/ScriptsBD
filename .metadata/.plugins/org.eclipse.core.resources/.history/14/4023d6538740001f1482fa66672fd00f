@@ -1,0 +1,4 @@
+CREATE table usuario(
+	nome varchar primary key(20),
+	idade integer (3),
+);
