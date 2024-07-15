@@ -1,14 +1,15 @@
 {
 	"folders": {},
 	"connections": {
-		"sqlite_jdbc-190a8590547-65f15c922424facf": {
+		"sqlite_jdbc-190a8891d5b-3df9cdb5a12def0e": {
 			"provider": "sqlite",
 			"driver": "sqlite_jdbc",
-			"name": "SQLite",
+			"name": "hemerximport",
 			"save-password": true,
 			"configuration": {
-				"url": "jdbc:sqlite:{file}",
-				"configurationType": "URL",
+				"database": "hemerximport",
+				"url": "jdbc:sqlite:hemerximport",
+				"configurationType": "MANUAL",
 				"type": "dev",
 				"closeIdleConnection": true,
 				"auth-model": "native"

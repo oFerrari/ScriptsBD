@@ -1,0 +1,15 @@
+SELECT * FROM HistoricoEmprego he ;
+SELECT * FROM HistoricoEmprego he WHERE he.Cargo = 'Ator' AND DataTermino NOT NULL;
+
+
+SELECT * FROM HistoricoEmprego he WHERE he.Cargo = 'Ator' OR he.Cargo = 'Advogado' ;
+
+SELECT * FROM HistoricoEmprego he WHERE he.Cargo = 'Ator' IN ('Advogado','Ator','Oftamologista');
+
+
+
+
+SELECT * FROM HistoricoEmprego he WHERE NOT DataTermino NOTNULL ;
+
+
+

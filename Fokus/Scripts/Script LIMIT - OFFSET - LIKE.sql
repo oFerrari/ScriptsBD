@@ -1,0 +1,11 @@
+SELECT * FROM HistoricoEmprego he ;
+
+SELECT * FROM HistoricoEmprego he order by Salario DESC LIMIT 5;
+
+SELECT * FROM HistoricoEmprego he LIMIT 10 OFFSET 10;
+
+SELECT * FROM HistoricoEmprego he WHERE DataTermino ISNULL;
+
+SELECT * FROM HistoricoEmprego he where Cargo LIKE '%Engenheiro%';
+
+

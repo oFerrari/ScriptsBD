@@ -1,0 +1,2 @@
+SELECT * FROM HistoricoEmprego he ;
+SELECT * FROM HistoricoEmprego he order by Salario DESC ;

@@ -1,0 +1,2 @@
+SELECT * FROM HistoricoEmprego he ;
+SELECT * FROM HistoricoEmprego he WHERE he.Cargo = 'Ator' AND DataTermino NOT NULL;
