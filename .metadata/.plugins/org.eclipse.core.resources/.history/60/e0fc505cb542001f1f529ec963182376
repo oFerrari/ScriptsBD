@@ -1,0 +1,188 @@
+SELECT * FROM tabela_pedidos tp
+
+SELECT * FROM tabela_pedidos tp WHERE "Data de Envio Estimada" > '2023-09-01' AND Status = 'Processando'
+
+SELECT * FROM tabela_pedidos tp WHERE "Data de Envio Estimada" > '2023-09-10' AND Status = 'Processando' OR Status = 'Pendente' 
+
+SELECT * FROM tabela_pedidos tp WHERE NOT Status = 'Processando' AND NOT Status = 'Entregue' 
+
+SELECT * FROM tabela_pedidos tp WHERE "Data do Pedido" BETWEEN '2023-09-01' AND '2023-09-31'
+
+-- 
+
+SELECT * from tabelaprodutos t 
+
+SELECT * FROM tabelaprodutos t where Preco_de_Compra BETWEEN 150.00 and 800.00
+
+SELECT sql FROM sqlite_master WHERE type='table' AND name='tabelaprodutos';
+
+INSERT INTO tabelaprodutos (ID_Produto, Nome_do_Produto, "Descricao", Categoria, Preco_de_Compra, Unidade, Fornecedor, Data_de_Inclusao)VALUES
+(1, 'Produto A', 'Descrição do Produto A', 101, 50.75, 'Unidade A', 1, '2024-01-10'),
+(2, 'Produto B', 'Descrição do Produto B', 102, 75.50, 'Unidade B', 2, '2024-02-15'),
+(3, 'Produto C', 'Descrição do Produto C', 103, 120.00, 'Unidade C', 3, '2024-03-20'),
+(4, 'Produto D', 'Descrição do Produto D', 104, 200.25, 'Unidade D', 1, '2024-04-25'),
+(5, 'Produto E', 'Descrição do Produto E', 105, 350.75, 'Unidade E', 2, '2024-05-30');
+
+INSERT INTO tabelaprodutos (ID_Produto, Nome_do_Produto, "Descricao", Categoria, Preco_de_Compra, Unidade, Fornecedor, Data_de_Inclusao)
+VALUES 
+(1, 'Café Orgânico', 'Café orgânico de alta qualidade', 201, 25.75, 'Pacote de 500g', 1, '2024-01-10'),
+
+(2, 'Notebook X100', 'Notebook com processador i7 e 16GB de RAM', 301, 4500.00, 'Unidade', 2, '2024-02-15'),
+
+(3, 'Garrafa Térmica', 'Garrafa térmica de 1L', 202, 80.00, 'Unidade', 3, '2024-03-20'),
+
+(4, 'Cadeira Ergonomica', 'Cadeira ergonômica para escritório', 401, 350.25, 'Unidade', 1, '2024-04-25'),
+
+(5, 'Teclado Mecânico', 'Teclado mecânico RGB', 302, 150.75, 'Unidade', 2, '2024-05-30'),
+
+(6, 'Monitor 24"', 'Monitor Full HD de 24 polegadas', 303, 800.00, 'Unidade', 3, '2024-06-10'),
+
+(7, 'Fone de Ouvido', 'Fone de ouvido com cancelamento de ruído', 304, 250.25, 'Unidade', 1, '2024-07-15'),
+
+(8, 'Impressora Multifuncional', 'Impressora multifuncional a laser', 305, 1200.50, 'Unidade', 2, '2024-08-20'),
+
+(9, 'Mouse Gamer', 'Mouse gamer com 12 botões programáveis', 306, 95.75, 'Unidade', 3, '2024-09-01')
+
+INSERT INTO tabelaprodutos (ID_Produto, Nome_do_Produto, "Descricao", Categoria, Preco_de_Compra, Unidade, Fornecedor, Data_de_Inclusao)
+VALUES
+(10, 'Tablet Y200', 'Tablet com 64GB de armazenamento', 307, 1200.00, 'Unidade', 2, '2024-10-05'),
+
+(11, 'Camisa Polo', 'Camisa polo de algodão', 502, 50.00, 'Peça', 4, '2024-11-12'),
+
+(12, 'Bicicleta Montanha', 'Bicicleta de montanha com 21 marchas', 503, 1200.00, 'Unidade', 5, '2024-11-20'),
+
+(13, 'Creme Facial', 'Creme facial hidratante', 504, 80.00, 'Unidade', 6, '2024-11-25'),
+
+(14, 'Boneca', 'Boneca de pano artesanal', 505, 35.00, 'Unidade', 7, '2024-12-01'),
+
+(15, 'Furadeira Elétrica', 'Furadeira elétrica com 500W de potência', 501, 200.00, 'Unidade', 8, '2024-12-05'),
+
+(16, 'Tênis Esportivo', 'Tênis esportivo para corrida', 502, 300.00, 'Par', 4, '2024-12-10'),
+
+(17, 'Kit Ferramentas', 'Kit de ferramentas com 50 peças', 501, 150.00, 'Conjunto', 8, '2024-12-15'),
+
+(18, 'Smartwatch Z3', 'Smartwatch com monitoramento de saúde', 307, 900.00, 'Unidade', 2, '2024-12-20'),
+
+(19, 'Câmera Digital', 'Câmera digital com 20MP', 301, 1500.00, 'Unidade', 2, '2024-12-25'),
+
+(20, 'Livro de Ficção', 'Livro de ficção científica', 506, 40.00, 'Unidade', 9, '2024-12-30');
+
+
+DELETE from tabelaprodutos 
+
+
+SELECT * FROM tabelaprodutos t where Preco_de_Compra BETWEEN 150.00 and 800.00 order by Categoria 
+
+SELECT * FROM tabelaprodutos t where Preco_de_Compra BETWEEN 150.00 and 800.00 order by Nome_do_Produto 
+
+select COUNT(*) from tabelacategorias t 
+
+select * from tabelacategorias t; 
+
+SELECT sql FROM sqlite_master WHERE type='table' AND name='tabelacategorias';
+
+delete from tabelacategorias ;
+
+SELECT * FROM tabelacategorias t order by Nome_Categoria ;
+
+INSERT INTO tabelacategorias (ID_Categoria, Nome_Categoria, Descricao_Categoria)
+VALUES
+(201, 'Alimentos e Bebidas', 'Produtos alimentícios e bebidas diversas'),
+(301, 'Eletrônicos', 'Dispositivos eletrônicos como computadores, smartphones, etc.'),
+(202, 'Utensílios Domésticos', 'Itens usados no dia a dia em casa, como garrafas térmicas, panelas, etc.'),
+(401, 'Mobiliário', 'Móveis para casa e escritório, incluindo cadeiras, mesas, etc.'),
+(302, 'Acessórios de Computador', 'Acessórios e periféricos de computador como teclados, mouses, etc.'),
+(303, 'Monitores', 'Monitores de diferentes tamanhos e resoluções para computadores'),
+(304, 'Áudio', 'Aparelhos e acessórios de áudio como fones de ouvido, caixas de som, etc.'),
+(305, 'Equipamentos de Escritório', 'Equipamentos usados em escritórios, como impressoras, scanners, etc.'),
+(306, 'Acessórios de Jogos', 'Acessórios específicos para jogos, incluindo mouses gamers, teclados gamers, etc.'),
+(307, 'Dispositivos Móveis', 'Dispositivos móveis como smartphones, tablets, etc.'),
+(506, 'Livros', 'Livros de diferentes gêneros e autores'),
+(507, 'Móveis', 'Móveis para diferentes ambientes da casa e do escritório'),
+(508, 'Roupas Infantis', 'Vestuário para crianças de todas as idades'),
+(509, 'Jardinagem', 'Ferramentas e produtos para jardinagem'),
+(510, 'Automotivo', 'Acessórios e peças para veículos'),
+(511, 'Instrumentos Musicais', 'Instrumentos musicais de várias categorias'),
+(512, 'Brinquedos Educativos', 'Brinquedos que promovem aprendizado e desenvolvimento'),
+(513, 'Cosméticos', 'Produtos de beleza e cuidados pessoais'),
+(514, 'Material Escolar', 'Material para estudantes de todas as idades'),
+(515, 'Papelaria', 'Produtos de papelaria para uso doméstico e de escritório');
+
+
+select * from tabelaprodutos t where Preco_de_Compra BETWEEN 200.00  and 1000 ORDER by Data_de_Inclusao
+
+select * from tabelaprodutos t where Preco_de_Compra order by Preco_de_Compra desc;
+
+
+SELECT * FROM tabela_pedidos tp WHERE Status <> 'Entregue' AND 'Data do Pedido' BETWEEN '2023-08-01' AND '2023-08-30';
+
+UPDATE tabela_pedidos SET Status = 'Entregue' WHERE Status <> 'Entregue' AND 'Data do Pedido' BETWEEN '2023-08-01' AND '2023-08-30';
+
+ALTER TABLE tabela_pedidos RENAME TO tabela_pedidos_old;
+
+-- tabelaprodutos definition
+
+CREATE TABLE tabela_pedidos (
+	ID INTEGER,
+	"Data do Pedido" DATE,
+	Status VARCHAR(50),
+	"Total do Pedido" REAL,
+	Cliente INTEGER,
+	"Data de Envio Estimada" DATE(50)
+); 
+
+DROP table tabela_pedidos ;
+
+SELECT ID,
+DATE("Data do Pedido"),
+Status,
+"Total do Pedido",
+Cliente,
+DATE("Data de Envio Estimada")
+FROM tabela_pedidos_old
+
+
+
+SELECT 
+    ID,
+    strftime('%Y-%m-%d', "Data do Pedido"),
+    Status,
+    "Total do Pedido",
+    Cliente,
+    strftime('%Y-%m-%d', "Data de Envio Estimada")
+FROM tabela_pedidos_old;
+
+
+
+
+
+
+INSERT INTO tabela_pedidos
+(ID, "Data do Pedido", Status, "Total do Pedido", Cliente, "Data de Envio Estimada")
+SELECT(ID,strftime('%Y-%m-%d', "Data do Pedido"),Status,"Total do Pedido",Cliente,strftime('%Y-%m-%d', "Data de Envio Estimada"))
+FROM tabela_pedidos_old;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

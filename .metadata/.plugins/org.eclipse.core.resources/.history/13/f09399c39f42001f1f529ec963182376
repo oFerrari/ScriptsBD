@@ -1,0 +1,47 @@
+SELECT * FROM tabela_pedidos tp
+
+SELECT * FROM tabela_pedidos tp WHERE "Data de Envio Estimada" > '2023-09-01' AND Status = 'Processando'
+
+SELECT * FROM tabela_pedidos tp WHERE "Data de Envio Estimada" > '2023-09-10' AND Status = 'Processando' OR Status = 'Pendente' 
+
+SELECT * FROM tabela_pedidos tp WHERE NOT Status = 'Processando' AND NOT Status = 'Entregue' 
+
+SELECT * FROM tabela_pedidos tp WHERE "Data do Pedido" BETWEEN '2023-09-01' AND '2023-09-31'
+
+-- 
+
+SELECT * from tabelaprodutos t 
+
+SELECT * FROM tabelaprodutos t where Preco_de_Compra BETWEEN 150.00 and 600.00
+
+SELECT sql FROM sqlite_master WHERE type='table' AND name='tabelaprodutos';
+
+INSERT INTO tabelaprodutos (ID_Produto, Nome_do_Produto, "Descricao", Categoria, Preco_de_Compra, Unidade, Fornecedor, Data_de_Inclusao)VALUES
+(1, 'Produto A', 'Descrição do Produto A', 101, 50.75, 'Unidade A', 1, '2024-01-10'),
+(2, 'Produto B', 'Descrição do Produto B', 102, 75.50, 'Unidade B', 2, '2024-02-15'),
+(3, 'Produto C', 'Descrição do Produto C', 103, 120.00, 'Unidade C', 3, '2024-03-20'),
+(4, 'Produto D', 'Descrição do Produto D', 104, 200.25, 'Unidade D', 1, '2024-04-25'),
+(5, 'Produto E', 'Descrição do Produto E', 105, 350.75, 'Unidade E', 2, '2024-05-30');
+INSERT INTO tabelaprodutos (ID_Produto, Nome_do_Produto, "Descricao", Categoria, Preco_de_Compra, Unidade, Fornecedor, Data_de_Inclusao)
+VALUES 
+(1, 'Café Orgânico', 'Café orgânico de alta qualidade', 201, 25.75, 'Pacote de 500g', 1, '2024-01-10'),
+
+(2, 'Notebook X100', 'Notebook com processador i7 e 16GB de RAM', 301, 4500.00, 'Unidade', 2, '2024-02-15'),
+
+(3, 'Garrafa Térmica', 'Garrafa térmica de 1L', 202, 80.00, 'Unidade', 3, '2024-03-20'),
+
+(4, 'Cadeira Ergonomica', 'Cadeira ergonômica para escritório', 401, 350.25, 'Unidade', 1, '2024-04-25'),
+
+(5, 'Teclado Mecânico', 'Teclado mecânico RGB', 302, 150.75, 'Unidade', 2, '2024-05-30'),
+
+(6, 'Monitor 24"', 'Monitor Full HD de 24 polegadas', 303, 800.00, 'Unidade', 3, '2024-06-10'),
+
+(7, 'Fone de Ouvido', 'Fone de ouvido com cancelamento de ruído', 304, 250.25, 'Unidade', 1, '2024-07-15'),
+
+(8, 'Impressora Multifuncional', 'Impressora multifuncional a laser', 305, 1200.50, 'Unidade', 2, '2024-08-20'),
+
+(9, 'Mouse Gamer', 'Mouse gamer com 12 botões programáveis', 306, 95.75, 'Unidade', 3, '2024-09-01')
+
+DELETE from tabelaprodutos 
+
+

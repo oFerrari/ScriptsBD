@@ -1,0 +1,3 @@
+select * from tabela_fornecedores tf 
+select distinct "Nome do Fornecedor" from tabela_fornecedores tf where "País de Origem" = "China"
+select "Nome do Fornecedor" from tabela_fornecedores tf where "País de Origem" = "China"

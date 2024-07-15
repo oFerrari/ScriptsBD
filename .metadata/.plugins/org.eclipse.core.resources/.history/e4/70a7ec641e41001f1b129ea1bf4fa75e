@@ -1,0 +1,61 @@
+select * from tabela_fornecedores tf 
+
+select distinct "Nome do Fornecedor" from tabela_fornecedores tf where "País de Origem" = "China"
+select "Nome do Fornecedor" from tabela_fornecedores tf where "País de Origem" = "China"
+
+ALTER TABLE tabela_fornecedores ADD COLUMN Fixo char(2)
+ALTER TABLE tabela_fornecedores ADD COLUMN Fixo2 bit(5);
+
+alter table tabela_fornecedores drop column Fixo2
+
+insert into tabela_fornecedores (Fixo) values ('abg')
+
+
+insert into tabela_fornecedores (Fixo) values ('abg') where id = 1
+insert into tabela_fornecedores (Fixo) values ('abg')         
+
+select * from tabela_fornecedores tf 
+
+ALTER TABLE tabela_fornecedores ADD 'Endereço do Cliente' varchar(50);
+
+alter table tabela_fornecedores drop column 'Endereço do Client'
+
+CREATE TABLE tabelacategorias (
+  ID_Categoria INT PRIMARY KEY,
+  Nome_Categoria VARCHAR (250),
+  Descricao_Categoria TEXT
+);
+
+
+
+CREATE TABLE tabelaprodutos (
+  ID_Produto INT PRIMARY KEY,
+  Nome_do_Produto VARCHAR (250),
+  Descrição TEXT,
+  Categoria INT,
+  Preco_de_Compra DECIMAL (10,2),
+  Unidade VARCHAR (50),
+  Fornecedor INT,
+  Data_de_Inclusao DATE,
+  
+  FOREIGN KEY (Fornecedor) REFERENCES tabela_fornecedores(id)
+);
+
+
+ALTER TABLE tabelaprodutos RENAME COLUMN "Descrição" TO "Descricao"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

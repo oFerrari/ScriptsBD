@@ -1,0 +1,13 @@
+SELECT * FROM tabela_pedidos tp
+
+SELECT * FROM tabela_pedidos tp WHERE "Data de Envio Estimada" > '2023-09-01' AND Status = 'Processando'
+
+SELECT * FROM tabela_pedidos tp WHERE "Data de Envio Estimada" > '2023-09-10' AND Status = 'Processando' OR Status = 'Pendente' 
+
+SELECT * FROM tabela_pedidos tp WHERE NOT Status = 'Processando' AND NOT Status = 'Entregue' 
+
+SELECT * FROM tabela_pedidos tp WHERE "Data do Pedido" BETWEEN '2023-09-01' AND '2023-09-31'
+
+-- 
+
+SELECT * FROM tabelaprodutos t where Preco_de_Compra BETWEEN 250.00 and 600

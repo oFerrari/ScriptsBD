@@ -1,0 +1,7 @@
+SELECT * FROM tabela_pedidos tp
+
+SELECT * FROM tabela_pedidos tp WHERE "Data de Envio Estimada" > '2023-09-01' AND Status = 'Processando'
+
+SELECT * FROM tabela_pedidos tp WHERE "Data de Envio Estimada" > '2023-09-10' AND Status = 'Processando' OR Status = 'Pendente' 
+
+SELECT * FROM tabela_pedidos tp WHERE NOT Status = 'Processando' OR Status = 'Pendente'

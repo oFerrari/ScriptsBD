@@ -1,0 +1,3 @@
+SELECT * FROM tabela_pedidos tp
+
+SELECT * FROM tabela_pedidos tp WHERE "Data de Envio Estimada" > '2023-09-01' AND Status = Processando
