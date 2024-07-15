@@ -394,3 +394,12 @@
 23425490:SQL_EDITOR_EXECUTE_QUERY
 23503585:SQL_EDITOR_EXECUTE_QUERY
 23503585:SQL_EDITOR_EXECUTE_QUERY
+26414878:Create connection:driver=sqlite:sqlite_jdbc
+26415937:Open connection:driver=sqlite:sqlite_jdbc
+26720096:ENTITY_EDITOR_OPEN:className=DataSourceDescriptor&driver=sqlite:sqlite_jdbc
+26938976:GENERAL_VIEW_OPEN:view=org.jkiss.dbeaver.core.databaseNavigator
+26938976:GENERAL_VIEW_OPEN:view=org.jkiss.dbeaver.core.databaseNavigator
+26948682:Edit connection:driver=sqlite:sqlite_jdbc
+26959194:Close connection:driver=sqlite:sqlite_jdbc
+26959213:Open connection:driver=sqlite:sqlite_jdbc
+26961730:ENTITY_EDITOR_OPEN:className=DataSourceDescriptor&driver=sqlite:sqlite_jdbc
