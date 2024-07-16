@@ -1,0 +1,8 @@
+--CONFERINDO QUANTIDADE DE DIGITOS DO CPF
+
+SELECT * FROM Colaboradores c 
+
+
+SELECT nome, LENGTH (cpf) qtdCar, COUNT(*) FROM Colaboradores c WHERE qtdCar = 11
+
+SELECT nome, LENGTH (cpf) qtdCar, COUNT(*) FROM Colaboradores c GROUP BY CPF 

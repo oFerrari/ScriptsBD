@@ -1,0 +1,6 @@
+SELECT * FROM Dependentes d ;
+
+
+SELECT Parentesco, COUNT(*) FROM Dependentes d GROUP BY Parentesco ;
+
+SELECT parentesco FROM Dependentes d GROUP BY Parentesco ORDER BY Parentesco;

@@ -1,0 +1,3 @@
+SELECT * FROM faturamento f ;
+
+SELECT MAX(faturamento_bruto), MAX(despesas) FROM faturamento f 

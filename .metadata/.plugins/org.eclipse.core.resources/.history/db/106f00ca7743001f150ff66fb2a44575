@@ -1,0 +1,6 @@
+--CONFERINDO QUANTIDADE DE DIGITOS DO CPF
+
+SELECT * FROM Colaboradores c 
+
+
+SELECT nome, LENGTH (cpf) qtdCar FROM Colaboradores c WHERE 

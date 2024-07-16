@@ -1,0 +1,18 @@
+SELECT * FROM Dependentes d ;
+
+SELECT Parentesco, COUNT(*) FROM Dependentes d GROUP BY Parentesco ;
+
+SELECT parentesco FROM Dependentes d GROUP BY Parentesco ORDER BY Parentesco;
+
+SELECT * FROM Treinamento t ;
+
+SELECT Instituicao, COUNT(Instituicao) total_instituicao 
+from Treinamento t 
+group by Instituicao 
+HAVING total_instituicao > 1
+
+
+--QUAIS PROFISSÕES MAIS SÃO CADASTRADAS
+
+SELECT Cargo, COUNT(Cargo) AS soma FROM HistoricoEmprego he GROUP BY Cargo HAVING soma > 1;
+

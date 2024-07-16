@@ -1,0 +1,3 @@
+SELECT * from faturamento;
+
+SELECT AVG(mes) FROM faturamento f ; 

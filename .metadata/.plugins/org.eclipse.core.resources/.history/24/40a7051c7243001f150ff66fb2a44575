@@ -1,0 +1,4 @@
+SELECT * FROM Dependentes d ;
+
+
+SELECT Parentesco FROM Dependentes d GROUP BY Parentesco ;
