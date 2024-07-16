@@ -12,6 +12,12 @@
 		<column name="Tamanho" visible="true" order="2" width="100"/>
 		<column name="Última modificação" visible="true" order="3" width="145"/>
 	</item>
+	<item id="NodeList/DBNResource">
+		<column name="Nome" visible="true" order="0" width="100"/>
+		<column name="Caminho" visible="true" order="1" width="296"/>
+		<column name="Tamanho" visible="true" order="2" width="100"/>
+		<column name="Última modificação" visible="true" order="3" width="175"/>
+	</item>
 	<item id="NodeList/DBNRoot/DataSourceDescriptor">
 		<column name="Nome" visible="true" order="0" width="100"/>
 		<column name="Descrição" visible="true" order="1" width="100"/>
@@ -49,7 +55,7 @@
 		<column name="Descrição" visible="true" order="7" width="100"/>
 	</item>
 	<item id="Suggestion/NodeList/SQLiteTableColumn">
-		<column name="Nome da coluna" visible="true" order="0" width="215"/>
+		<column name="Nome da coluna" visible="true" order="0" width="216"/>
 		<column name="#" visible="true" order="1" width="111"/>
 		<column name="Tipo de dados" visible="false" order="2" width="110"/>
 		<column name="Comprimento" visible="false" order="3" width="106"/>
