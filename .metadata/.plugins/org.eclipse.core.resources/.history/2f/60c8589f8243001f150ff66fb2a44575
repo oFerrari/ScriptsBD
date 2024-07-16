@@ -1,0 +1,3 @@
+SELECT ('O Faturamento bruto medio foi ' || CAST(ROUND(AVG(faturamento_bruto),2) AS TEXT)) FROM faturamento f ;
+
+SELECT * FROM HistoricoEmprego he ;

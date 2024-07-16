@@ -17,5 +17,3 @@ SELECT UPPER ('A pessoa colaboradora ' || nome || ' de CPF ' || cpf || ' Possui 
 SELECT LOWER ('A pessoa colaboradora ' || nome || ' de CPF ' || cpf || ' Possui o seguinte endereço: ' || endereco) AS texto FROM Colaboradores c ;
 
 SELECT * FROM Colaboradores c 
-
-SELECT Endereco FROM Colaboradores c WHERE INSTR(endereco, 'Rua') = TRUE 

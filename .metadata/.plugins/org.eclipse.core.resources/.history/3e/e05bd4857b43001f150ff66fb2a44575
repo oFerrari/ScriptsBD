@@ -5,9 +5,7 @@
 --Função INSTR
  --Funcionalidade: INSTR retorna a posição de uma substring dentro de uma string. Equivalente ao CHARINDEX em alguns outros sistemas.
   SELECT INSTR(descricao, 'abc') FROM tabela;
-	
- 	SELECT Endereco FROM Colaboradores c WHERE INSTR(endereco, 'Rua') = TRUE  
- 	
+	SELECT Endereco FROM Colaboradores c WHERE INSTR(endereco, 'Rua') = TRUE  
 --Função REPLACE
  --Funcionalidade: REPLACE substitui todas as ocorrências de uma substring específica por outra substring dentro de uma string.
   SELECT REPLACE(saudacao, 'hello', 'hi') FROM tabela;

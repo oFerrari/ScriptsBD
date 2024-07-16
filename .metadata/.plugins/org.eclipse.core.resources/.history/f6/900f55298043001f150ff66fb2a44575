@@ -1,0 +1,9 @@
+SELECT * FROM faturamento f 
+
+--ARREDONDA 2 CASAS
+SELECT AVG(faturamento_bruto), ROUND (AVG(faturamento_bruto),2) FROM faturamento f ;
+
+--ARREDONDA PRO MAIOR
+SELECT CEIL(faturamento_bruto), CEIL(despesas) FROM faturamento f;
+
+SELECT FLOOR(faturamento_bruto), FLOOR() (despesas) FROM faturamento f;

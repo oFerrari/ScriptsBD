@@ -1,0 +1,7 @@
+SELECT * FROM faturamento f 
+
+SELECT AVG(faturamento_bruto), ROUND (AVG(faturamento_bruto),2) FROM faturamento f ;
+
+SELECT CEIL(faturamento_bruto), CEIL(despesas) FROM faturamento f;
+
+SELECT cie

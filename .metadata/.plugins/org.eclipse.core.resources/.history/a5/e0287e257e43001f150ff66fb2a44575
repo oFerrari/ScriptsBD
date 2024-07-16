@@ -1,0 +1,3 @@
+SELECT * FROM Licencas l;
+
+SELECT ID_Colaborador, STRFTIME('%Y/%M', DataInicio) FROM Licencas l;
